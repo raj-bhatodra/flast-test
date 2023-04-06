@@ -11,7 +11,7 @@ def index():
     Message = None
 
     if cpu_percent > 80 or mem_percent > 80:
-        mesg = "High CUP or Memory utilization."
+        Message = "High CUP or Memory utilization."
     return render_template('index.html', cpu_metric=cpu_percent, mem_metric=mem_percent, message=Message)
 
 
